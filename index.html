@@ -129,10 +129,22 @@
                 diets
                 instead
                 of letting it go to waste on the shore, we are helping the ocean, our planet, and
-                ourselves.<br><br><br>
+                ourselves.<br><br>
 
-                [VIDEO link: Dead Kelp]<br>
-                [VIDEO link: Kelp Intro]
+            <table>
+                <tr>
+                    <td> <iframe style="margin-right:50px"
+                            src="https://player.vimeo.com/video/872793859?badge=0&amp;autopause=0&amp;quality_selector=1&amp;progress_bar=1&amp;player_id=0&amp;app_id=58479"
+                            width="380" height="700" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                            title="1"></iframe>
+                    </td>
+                    <td> <iframe style="margin-right:50px"
+                            src="https://player.vimeo.com/video/872794144?badge=0&amp;autopause=0&amp;quality_selector=1&amp;progress_bar=1&amp;player_id=0&amp;app_id=58479"
+                            width="380" height="700" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                            title="2"></iframe></td>
+                </tr>
+            </table>
+            <br><br>
             </p>
             <hr>
             <div>
@@ -140,13 +152,13 @@
                 <div id="comments" class="w3-center w3-margin-top w3-padding">
                     <h3 style="margin-right:572px">Speak Your Mind: </h3>
                     <div>
-                        <textarea style="margin-right:280px" id="comment-input" placeholder="Add a comment" rows="10"
+                        <textarea style="margin-right:280px" id="comment-input" placeholder="Add a comment" rows="12"
                             cols="37"></textarea>
                     </div>
                     <button class="w3-green" style="margin-right:747px" id="submit-comment">Submit</button>
-                    <hr>
+                    <hr><br><br>
                     <ul id="comment-list">
-                        <! Comments will be added here dynamically>
+                        <!-- Comments will be added here dynamically -->
                     </ul>
                 </div>
                 <!-- End of User Comment-->
@@ -171,86 +183,54 @@
             document.getElementById("myOverlay").style.display = "none";
         }
 
-        // Modal Image Gallery
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
-
         // ---------------------------Comments Select HTML elements
 
-        function loadComments() {
-            const comments = JSON.parse(localStorage.getItem("comments")) || [];
-            comments.forEach((commentText) => {
-                const listItem = document.createElement("li");
-                listItem.textContent = commentText;
-                commentList.appendChild(listItem);
-            });
-        }
-
-        // Select HTML elements
-        const commentList = document.getElementById("comment-list");
-        const commentInput = document.getElementById("comment-input");
-        const submitButton = document.getElementById("submit-comment");
-
-        // Event listener for the submit button
-        submitButton.addEventListener("click", () => {
+        // Function to add a comment to the list and store it in localStorage
+        function addComment() {
+            const commentInput = document.getElementById('comment-input');
             const commentText = commentInput.value.trim();
-            if (commentText !== "") {
-                // Create a new list item for the comment
-                const listItem = document.createElement("li");
-                listItem.textContent = commentText;
 
-                // Add the comment to the list
+            if (commentText !== '') {
+                const commentList = document.getElementById('comment-list');
+
+                // Create a new list item for the comment
+                const listItem = document.createElement('li');
+                listItem.textContent = commentText;
                 commentList.appendChild(listItem);
+
+                // Store the comment in localStorage
+                const comments = JSON.parse(localStorage.getItem('comments')) || [];
+                comments.push(commentText);
+                localStorage.setItem('comments', JSON.stringify(comments));
 
                 // Clear the input field
-                commentInput.value = "";
+                commentInput.value = '';
             }
-        });
-        // Function to save comments to local storage
-        function saveComment(comment) {
-            const comments = JSON.parse(localStorage.getItem("comments")) || [];
-            comments.push(comment);
-            window.localStorage.setItem("comments", JSON.stringify(comments));
         }
 
-        // Function to retrieve comments from local storage
+        // Function to load comments from localStorage and display them
         function loadComments() {
-            const comments = JSON.parse(localStorage.getItem("comments")) || [];
-            comments.forEach((commentText) => {
-                const listItem = document.createElement("li");
+            const commentList = document.getElementById('comment-list');
+            const comments = JSON.parse(localStorage.getItem('comments')) || [];
+
+            comments.forEach(commentText => {
+                const listItem = document.createElement('li');
                 listItem.textContent = commentText;
                 commentList.appendChild(listItem);
             });
         }
 
-        // Add a load event listener to call the 'loadComments' function when the page loads
+        /*Function to delete comments and clear localStorage
+        function deleteComments() {
+            const commentList = document.getElementById('comment-list');
+            commentList.innerHTML = ''; // Clear the comment list
+            localStorage.removeItem('comments'); // Clear localStorage
+        }*/
+
+        // Attach event listeners
+        document.getElementById('submit-comment').addEventListener('click', addComment);
         window.addEventListener('load', loadComments);
-
-
-        // Modify the submit button event listener to save comments
-        submitButton.addEventListener("click", () => {
-            const commentText = commentInput.value.trim();
-            if (commentText !== "") {
-                saveComment(commentText);
-                const listItem = document.createElement("li");
-                listItem.textContent = commentText;
-                commentList.appendChild(listItem);
-                commentInput.value = "";
-            }
-        });
-
-
-        // Remove Comments By Us
-        /* function removeCommentsFromLocalStorage() {
-             localStorage.removeItem("comments");
-         }
-         window.addEventListener("load", removeCommentsFromLocalStorage);*/
-
-
+        /*window.addEventListener('beforeunload', deleteComments);*/
     </script>
 
 </body>

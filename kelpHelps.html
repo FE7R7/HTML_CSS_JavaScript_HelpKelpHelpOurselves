@@ -129,32 +129,26 @@
             </div>
 
         </div>
+    </div>
+    <footer>
+        <div class="w3-white w3-container w3-padding-16" style="margin-top:40px;padding-right:58px">
+            <p class="w3-right">Powered by HELP KELP, HELP OURSELVES TEAM</p>
+        </div>
+    </footer>
 
-        <footer>
-            <div class="w3-white w3-container w3-padding-16" style="margin-top:40px;padding-right:58px">
-                <p class="w3-right">Powered by HELP KELP, HELP OURSELVES TEAM</p>
-            </div>
-        </footer>
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
 
-        <script>
-            // Script to open and close sidebar
-            function w3_open() {
-                document.getElementById("mySidebar").style.display = "block";
-                document.getElementById("myOverlay").style.display = "block";
-            }
-
-            function w3_close() {
-                document.getElementById("mySidebar").style.display = "none";
-                document.getElementById("myOverlay").style.display = "none";
-            }
-
-            // Modal Image Gallery
-            function onClick(element) {
-                document.getElementById("img01").src = element.src;
-                document.getElementById("modal01").style.display = "block";
-                var captionText = document.getElementById("caption");
-                captionText.innerHTML = element.alt;
-            }
-        </script>
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
 
 </body>
+
+</html>

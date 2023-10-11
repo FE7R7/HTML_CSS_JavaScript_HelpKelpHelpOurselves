@@ -2,140 +2,226 @@
 <html lang="en">
 
 <head>
-    <title>Help Kelp, Help Ourselves</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/nature.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
-    <style>
-        body,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5 {
-            font-family: "Poppins", sans-serif
-        }
 
-        body {
-            font-size: 16px;
-        }
+       <title>Help Kelp, Help Ourselves</title>
 
-        .w3-half img {
-            margin-bottom: -6px;
-            margin-top: 16px;
-        }
-    </style>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+
+       <link rel="stylesheet" href="css/nature.css">
+       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+       <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+
+       <style>
+              body,
+              h1,
+              h2,
+              h3,
+              h4,
+              h5 {
+                     font-family: "Poppins", sans-serif
+              }
+
+              body {
+                     font-size: 25px;
+              }
+
+              .w3-half img {
+                     margin-bottom: -6px;
+                     margin-top: 16px;
+              }
+
+              @media screen and (max-width: 768px) {
+
+                     /* Adjust font size for smaller screens */
+                     body {
+                            font-size: 17px ! important;
+                     }
+              }
+
+              img {
+                     max-width: 100%;
+                     height: auto;
+              }
+       </style>
+
+
 </head>
 
 <body style="background-color:whitesmoke;">
 
-    <!-- Sidebar/menu -->
-    <nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding"
-        style="z-index:3;width:240px;font-weight:bold;" id="mySidebar"><br>
-        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
-            style="width:100%;font-size:22px">Close Menu</a>
-        <div class="w3-container">
-            <h1 class="w3-padding-32 w3-center"><b>Explore</b></h1>
-        </div>
-        <div class="w3-bar-block">
-            <a href="index.html" onclick="w3_close()"
-                class="w3-bar-item w3-text-blue w3-button w3-hover-grey w3-white w3-round-xlarge w3-center">Why
-                Kelp?</a>
-            <hr>
-            <a href="helpSomeKelp.html" onclick="w3_close()"
-                class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Help Some
-                Kelp</a>
-            <hr>
-            <a href="kelpHelps.html" onclick="w3_close()"
-                class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Kelp
-                Helps</a>
-            <hr>
-            <a href="kelpOnShores.html" onclick="w3_close()"
-                class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Dead
-                Kelp</a>
-            <hr>
-            <a href="HelpToBeHelped.html" onclick="w3_close()"
-                class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Help to Be
-                Helped</a>
-            <hr>
-            <a href="usefullLinks.html" onclick="w3_close()"
-                class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Useful
-                Links</a>
-            <hr>
-            <a href="AboutUs.html" onclick="w3_close()"
-                class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">About
-                Us</a>
-            <hr>
-        </div>
-    </nav>
+       <!---------------------------- Responsive Side Bar ------------------------->
 
-    <!-- Top menu on small screens -->
-    <header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
-        <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
-        <span><b>Help Kelp, Help Ourselves</b></span>
-    </header>
-    <!-- Overlay effect when opening sidebar on small screens -->
-    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
-        id="myOverlay"></div>
+       <style>
+              /* Add this style to make the sidebar responsive */
+              .w3-sidebar {
+                     z-index: 3;
+                     width: 240px;
+                     font-weight: bold;
+                     overflow-x: hidden;
+                     position: fixed;
+              }
 
-    <!-- Header -->
-    <div class="w3-container" style="margin-top:20px" id="showcase"></div>
+              /* Add this style to make the top menu on small screens responsive */
+              .w3-top.w3-hide-large {
+                     display: block;
+              }
 
-    <!-- !PAGE CONTENT! -->
-    <div class="w3-main" style="margin-left:240px">
-        <header>
-            <div class="w3-container" style="margin-top:20px; margin-right:40px">
-                <h1 class="w3-center w3-round w3-text-ocean-blue w3-xxxlarge">
-                    <b>About Us<br></b>
-                </h1>
-            </div>
-        </header>
-        <section class="w3-row">
-            <div style="margin-top:20px;margin-left:190px;margin-right:190px" class="w3-xlarge w3-padding">
-                <p>
+              /* Add this style to make the header responsive */
+              header {
+                     text-align: center;
+                     padding: 20px;
+              }
 
-                    We are software engineering students from the Technological University of the Shannon: Midlands
-                    Midwest (Athlone), passionate about exploring kelp as a straightforward approach to addressing the
-                    global food crisis and climate change.
-                    <hr>
-
-                <h1 class="w3-text-ocean-blue">Team Members</h1>
-                <ul>
-                    <li>Qiuran Hu</li>
-                    <li>Fernando Barreto Rodrigues</li>
-                    <li>Sivabharathi Dhatchinamoorthi</li>
-                    <li>Shean Hans Teoh</li>
-                    <li>Khai Xuen Tang</li>
-                </ul>
-                <br>
-                <hr>
-
-                If you have any questions about kelp, or if you've encountered similar heaps of discarded kelp in
-                your own areas, we would be delighted to hear from you.
-                <hr>
-                <b class="w3-xlarge">Qiuran Hu</b>,<b> <a class="w3-text-ocean-blue"
-                        href="mailto:A00314784@student.tus.ie"
-                        style="color:inherit;text-decoration:inherit">A00314784@student.tus.ie</a></b>
-                </p>
-            </div>
-        </section>
-        <div>
-            <h4><b><a style="margin-left: 200px;"
-                        class="w3-bar-item w3-button w3-hover-grey  w3-blue w3-round-xxlarge w3-center"
-                        href="index.html" target="_blank">Home / Comment</a></b></h4>
-        </div>
-    </div>
+              /* Add this style to make the header image responsive */
+              header img {
+                     width: 75%;
+                     max-width: 100%;
+                     height: auto;
+              }
+       </style>
 
 
-    <footer>
-        <div class="w3-white w3-container w3-padding-16" style="margin-top:40px;padding-right:58px">
-            <p class="w3-right">Powered by HELP KELP, HELP OURSELVES TEAM</p>
-        </div>
-    </footer>
+       <!-- Sidebar/menu -->
 
+       <nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding"
+              style="z-index:3;width:240px;font-weight:bold;" id="mySidebar"><br>
+              <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+                     style="width:100%;font-size:22px">Close Menu</a>
+              <div class="w3-container">
+                     <h1 class="w3-padding-32 w3-center"><b>Explore</b></h1>
+              </div>
+              <div class="w3-bar-block">
+                     <a href="index.html" onclick="w3_close()"
+                            class="w3-bar-item w3-text-blue w3-button w3-hover-grey w3-white w3-round-xlarge w3-center">Why
+                            Kelp?</a>
+                     <hr>
+                     <a href="helpSomeKelp.html" onclick="w3_close()"
+                            class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Help
+                            Some
+                            Kelp</a>
+                     <hr>
+                     <a href="kelpHelps.html" onclick="w3_close()"
+                            class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Kelp
+                            Helps</a>
+                     <hr>
+                     <a href="kelpOnShores.html" onclick="w3_close()"
+                            class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Dead
+                            Kelp</a>
+                     <hr>
+                     <a href="HelpToBeHelped.html" onclick="w3_close()"
+                            class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Help
+                            to Be
+                            Helped</a>
+                     <hr>
+                     <a href="usefullLinks.html" onclick="w3_close()"
+                            class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Useful
+                            Links</a>
+                     <hr>
+                     <a href="AboutUs.html" onclick="w3_close()"
+                            class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">About
+                            Us</a>
+                     <hr>
+              </div>
+       </nav>
+
+       <!-- Top menu on small screens -->
+       <header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+              <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
+              <span><b>Help Kelp, Help Ourselves</b></span>
+       </header>
+       <!-- Overlay effect when opening sidebar on small screens -->
+       <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+              id="myOverlay"></div>
+
+       <!-- Header -->
+       <div class="w3-container" style="margin-top:20px" id="showcase"></div>
+
+       <!-- !PAGE CONTENT! -->
+       <div class="w3-main" style="margin-left:240px">
+              <header>
+                     <div class="w3-container" style="margin-top:20px; margin-right:40px">
+                            <h1 class="w3-center w3-round w3-text-ocean-blue w3-xxxlarge">
+                                   <b>About Us<br></b>
+                            </h1>
+                     </div>
+              </header>
+
+              <section class="w3-row">
+
+                     <hr style="margin-left:205px;width:120px;border:7px solid blue" class="w3-round">
+
+                     <div style="margin-top:20px;margin-left:190px;margin-right:190px" class="w3-padding">
+
+                            <p>
+
+                                   We are software engineering students from the Technological University of the
+                                   Shannon: Midlands
+                                   Midwest (Athlone), passionate about exploring kelp as a straightforward approach
+                                   to addressing the
+                                   global food crisis and climate change.
+                                   <hr>
+
+                            <h1 class="w3-text-ocean-blue">Team Members</h1>
+                            <ul>
+                                   <li>Qiuran Hu</li>
+                                   <li>Fernando Barreto Rodrigues</li>
+                                   <li>Sivabharathi Dhatchinamoorthi</li>
+                                   <li>Shean Hans Teoh</li>
+                                   <li>Khai Xuen Tang</li>
+                            </ul>
+
+                            <br>
+                            <hr>
+
+                            If you have any questions about kelp, or if you've encountered similar heaps of
+                            discarded kelp in
+                            your own areas, we would be delighted to hear from you.
+
+                            <hr>
+
+                            <b class="w3-xlarge">Qiuran Hu</b>,<b> <a class="w3-text-ocean-blue"
+                                          href="mailto:A00314784@student.tus.ie"
+                                          style="color:inherit;text-decoration:inherit">A00314784@student.tus.ie</a></b>
+
+                            </p>
+
+                     </div>
+              </section>
+              <div>
+                     <h4>
+                            <b>
+                                   <a style="margin-left: 200px;"
+                                          class="w3-bar-item w3-button w3-hover-grey  w3-blue w3-round-xxlarge w3-center"
+                                          href="index.html" target="_blank">Home / Comment
+                                   </a>
+                            </b>
+                     </h4>
+              </div>
+       </div>
+
+
+       <footer>
+              <div class="w3-white w3-container w3-padding-16" style="margin-top:40px;padding-right:58px">
+                     <p class="w3-right">Powered by HELP KELP, HELP OURSELVES TEAM</p>
+              </div>
+       </footer>
+
+       <script>
+
+              // Script to open and close sidebar
+              function w3_open() {
+                     document.getElementById("mySidebar").style.display = "block";
+                     document.getElementById("myOverlay").style.display = "block";
+              }
+
+              function w3_close() {
+                     document.getElementById("mySidebar").style.display = "none";
+                     document.getElementById("myOverlay").style.display = "none";
+              }
+
+       </script>
 
 </body>
 

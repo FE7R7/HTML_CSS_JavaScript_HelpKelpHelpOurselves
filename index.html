@@ -56,13 +56,19 @@
                      /* Adjust font size for smaller screens */
                      body {
                             font-size: 17px ! important;
-                            margin-left: 17px ! important;
+                            margin-left: 25px ! important;
                             margin-right: 17px ! important;
+                     }
+
+                     nav {
+                            margin-left: -25px;
                      }
 
                      footer {
                             width: 110%;
+
                      }
+
 
                      .video {
                             width: 200px ! important;
@@ -72,7 +78,7 @@
 
                      iframe {
                             margin-right: -50px;
-                            margin-left: 50px;
+                            margin-left: 45px;
                      }
               }
 
@@ -170,7 +176,8 @@
 
 
        <!-- Top menu on small screens -->
-       <header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+       <header style="margin-left: -24px; width:100%"
+              class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
               <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
               <span><b>Menu</b></span>
        </header>

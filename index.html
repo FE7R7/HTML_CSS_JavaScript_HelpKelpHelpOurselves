@@ -26,16 +26,23 @@
               body {
                      font-size: 25px;
                      margin-left: 170px;
-                     margin-right: 190px
+                     margin-right: 170px;
+              }
+
+              hr {
+                     margin-left: 17px;
+                     width: 120px;
               }
 
               footer {
-                     width: 120%;
+                     margin-right: -15.5%;
               }
 
               nav {
                      margin-left: -170px;
               }
+
+
 
               iframe {
                      margin-right: 50px;
@@ -60,15 +67,19 @@
                             margin-right: 17px ! important;
                      }
 
-                     nav {
-                            margin-left: -25px;
+                     hr {
+                            margin-left: 17px;
+                            width: 17%;
                      }
 
                      footer {
-                            width: 110%;
-
+                            margin-right: -4%;
+                            margin-left: -50%;
                      }
 
+                     nav {
+                            margin-left: -25px;
+                     }
 
                      .video {
                             width: 200px ! important;
@@ -86,11 +97,9 @@
                      max-width: 100%;
                      height: auto;
               }
-
-              textarea {
-                     columns: "12";
-              }
        </style>
+
+
 </head>
 
 
@@ -146,33 +155,33 @@
                             <a href="index.html" onclick="w3_close()"
                                    class="w3-bar-item w3-text-blue w3-button w3-hover-grey w3-white w3-round-xlarge w3-center">Why
                                    Kelp?</a>
-                            <hr>
+                            <hr style="width: 80%;">
                             <a href="helpSomeKelp.html" onclick="w3_close()"
                                    class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Help
                                    Some
                                    Kelp</a>
-                            <hr>
+                            <hr style="width: 80%;">
                             <a href="kelpHelps.html" onclick="w3_close()"
                                    class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Kelp
                                    Helps</a>
-                            <hr>
+                            <hr style="width: 80%;">
                             <a href="kelpOnShores.html" onclick="w3_close()"
                                    class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Dead
                                    Kelp</a>
-                            <hr>
+                            <hr style="width: 80%;">
                             <a href="HelpToBeHelped.html" onclick="w3_close()"
                                    class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Help
                                    to Be
                                    Helped</a>
-                            <hr>
+                            <hr style="width: 80%;">
                             <a href="usefullLinks.html" onclick="w3_close()"
                                    class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Useful
                                    Links</a>
-                            <hr>
+                            <hr style="width: 80%;">
                             <a href="AboutUs.html" onclick="w3_close()"
                                    class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">About
                                    Us</a>
-                            <hr>
+                            <hr style="width: 80%;">
                      </div>
               </nav>
 
@@ -180,9 +189,10 @@
 
 
        <!-- Top menu on small screens -->
-       <header style="margin-left: -24px; width:100%"
-              class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+       <header style="margin-left: -24px;" class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+
               <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
+
               <span><b>Menu</b></span>
        </header>
 
@@ -209,7 +219,7 @@
               </div>
               <div class=" w3-center w3-padding w3-margin-top">
               </div>
-              <hr style="width:120px;border:7px solid blue" class="w3-round">
+              <hr style="border:7px solid blue" class="w3-round">
               <div class="w3-padding">
                      <p>
                             Over the past weekend, I stumbled upon heaps of kelp being discarded on an Irish beach. Kelp
@@ -266,11 +276,11 @@
                      <hr>
                      <div>
                             <!--User Comments -->
-                            <div id="comments" class="w3-comment-box w3-center w3-margin-top w3-padding">
+                            <div>
                                    <h3 class="w3-margin-right w3-hide-small">Speak Your Mind:</h3>
-                                   <div class="w3-margin-right w3-margin-bottom">
-                                          <textarea id="comment-input" placeholder="Add a comment" rows="6"
-                                                 cols="25"></textarea>
+                                   <div>
+                                          <textarea class="w3-center" id="comment-input" placeholder="Add a comment"
+                                                 rows="7" cols="25"></textarea>
                                    </div>
                                    <button class="w3-green w3-margin-right w3-round" id="submit-comment">Submit</button>
                                    <hr class="w3-hide-small">
@@ -283,8 +293,10 @@
                      </div>
               </div>
        </div>
-       <footer style="padding-left: -50px;">
-              <div class="w3-white w3-container w3-padding-16" style="margin-top:40px;padding-right:58px">
+
+       <footer style="margin-top:40px;">
+              <div class="w3-white w3-container w3-padding-16">
+
                      <p class="w3-right">Powered by HELP KELP, HELP OURSELVES TEAM</p>
               </div>
        </footer>

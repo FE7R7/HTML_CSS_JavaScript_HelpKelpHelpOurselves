@@ -25,6 +25,21 @@
 
               body {
                      font-size: 25px;
+                     margin-left: 170px;
+                     margin-right: 170px;
+              }
+
+              hr {
+                     margin-left: 17px;
+                     width: 120px;
+              }
+
+              footer {
+                     margin-right: -15.5%;
+              }
+
+              nav {
+                     margin-left: -170px;
               }
 
               .w3-half img {
@@ -33,9 +48,9 @@
               }
 
               img {
-                     height: 500px;
-                     width: 50%;
-                     margin-left: 170px;
+                     width: 50% ! important;
+                     height: 500px ! important;
+                     margin-left: 200px;
               }
 
               @media screen and (max-width: 768px) {
@@ -43,15 +58,35 @@
                      /* Adjust font size for smaller screens */
                      body {
                             font-size: 17px ! important;
+                            margin-left: 28px ! important;
+                            margin-right: 15px ! important;
                      }
 
+                     hr {
+                            margin-left: 17px;
+                            width: 17%;
+                     }
 
-                     /* Adjust image size for smaller screens */
+                     footer {
+                            margin-right: -10%;
+                            margin-left: -50%;
+                            font-size: 77%;
+                     }
+
+                     nav {
+                            margin-left: -28px;
+                     }
+
                      img {
-                            height: 320px;
-                            width: 320%;
-                            margin-left: 4px;
+                            width: 50% ! important;
+                            height: 300px ! important;
+                            margin-left: 120px;
                      }
+
+                     h1 {
+                            font-size: 17px ! important;
+                     }
+
               }
        </style>
 
@@ -59,7 +94,7 @@
 
 <body style="background-color:whitesmoke;">
 
-       <!---------------------------- Responsive Side Bar ------------------------->
+       <!----------------------------Responsive Side Bar ------------------------->
 
        <style>
               /* Add this style to make the sidebar responsive */
@@ -94,48 +129,60 @@
        <!-- Sidebar/menu -->
        <nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding"
               style="z-index:3;width:240px;font-weight:bold;" id="mySidebar"><br>
+
               <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
                      style="width:100%;font-size:22px">Close Menu</a>
+
               <div class="w3-container">
                      <h1 class="w3-padding-32 w3-center"><b>Explore</b></h1>
               </div>
+
               <div class="w3-bar-block">
                      <a href="index.html" onclick="w3_close()"
                             class="w3-bar-item w3-text-blue w3-button w3-hover-grey w3-white w3-round-xlarge w3-center">Why
                             Kelp?</a>
-                     <hr>
+                     <hr style="width: 80%;">
+
                      <a href="helpSomeKelp.html" onclick="w3_close()"
                             class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Help
                             Some
                             Kelp</a>
-                     <hr>
+                     <hr style="width: 80%;">
+
                      <a href="kelpHelps.html" onclick="w3_close()"
                             class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Kelp
                             Helps</a>
-                     <hr>
+                     <hr style="width: 80%;">
+
                      <a href="kelpOnShores.html" onclick="w3_close()"
                             class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Dead
                             Kelp</a>
-                     <hr>
+                     <hr style="width: 80%;">
+
                      <a href="HelpToBeHelped.html" onclick="w3_close()"
                             class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Help
                             to Be
                             Helped</a>
-                     <hr>
+                     <hr style="width: 80%;">
+
                      <a href="usefullLinks.html" onclick="w3_close()"
                             class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Useful
                             Links</a>
-                     <hr>
+                     <hr style="width: 80%;">
+
                      <a href="AboutUs.html" onclick="w3_close()"
                             class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">About
                             Us</a>
-                     <hr>
+                     <hr style="width: 80%;">
+
               </div>
        </nav>
 
        <!-- Top menu on small screens -->
-       <header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+       <header style="margin-left: -28px;" class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+
               <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
+
               <span><b>Menu</b></span>
        </header>
 
@@ -144,7 +191,8 @@
               id="myOverlay"></div>
 
        <!-- Header -->
-       <div class="w3-container" style="margin-top:25px" id="showcase"></div>
+       <div class="w3-container" style="margin-top:30px" id="showcase"></div>
+
 
        <!-- !PAGE CONTENT! -->
        <div class="w3-main" style="margin-left:240px">
@@ -163,9 +211,9 @@
 
               <section class="w3-row">
 
-                     <hr style="margin-left:190px;width:120px;border:7px solid blue" class="w3-round">
+                     <hr style="border:7px solid blue" class="w3-round">
 
-                     <div style="margin-left:170px;margin-right:190px" class="w3-padding">
+                     <div class="w3-padding">
                             <p>Kelp, a type of seaweed, is not only delicious but also highly nutritious. It is
                                    easy to prepare and
                                    can have
@@ -269,7 +317,7 @@
                                           <img src="images/Kelp14.jpg" class="w3-card" alt="image">
 
                                           <br>
-                                          <hr>
+                                          <br>
                                           <hr>
 
                                    </p>
@@ -283,18 +331,18 @@
               <div>
                      <h4>
                             <b>
-                                   <a style="margin-left: 180px;"
-                                          class="w3-bar-item w3-button w3-hover-grey  w3-blue w3-round-xxlarge w3-center"
-                                          href="index.html" target="_blank">Home / Comment
+                                   <a class="w3-bar-item w3-button w3-hover-grey  w3-blue w3-round-xxlarge w3-center"
+                                          href="index.html">Home / Comment
                                    </a>
                             </b>
                      </h4>
               </div>
        </div>
 
-       <footer>
-              <div class="w3-white w3-container w3-padding-16" style="margin-top:40px;padding-right:58px">
-                     <p class="w3-right">Powered by HELP KELP, HELP OURSELVES TEAM</p>
+       <footer style="margin-top:40px;">
+              <div class="w3-white w3-container w3-padding-16">
+
+                     <p class="w3-right w3-padding">Powered by HELP KELP, HELP OURSELVES TEAM</p>
               </div>
        </footer>
 

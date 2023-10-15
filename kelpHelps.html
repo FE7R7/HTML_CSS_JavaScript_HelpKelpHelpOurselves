@@ -23,7 +23,22 @@
               }
 
               body {
-                     font-size: 25px;
+                     font-size: 22px;
+                     margin-left: 170px;
+                     margin-right: 170px;
+              }
+
+              hr {
+                     margin-left: 17px;
+                     width: 120px;
+              }
+
+              footer {
+                     margin-right: -15.5%;
+              }
+
+              nav {
+                     margin-left: -170px;
               }
 
               .w3-half img {
@@ -31,25 +46,45 @@
                      margin-top: 16px;
               }
 
-              .image {
+              img {
+                     margin-right: 400px;
+                     margin-left: 30%;
+                     height: 650px;
+                     width: auto;
 
-                     margin-right: 550px;
-                     margin-left: -80px
               }
 
               @media screen and (max-width: 768px) {
 
                      /* Adjust font size for smaller screens */
                      body {
-                            font-size: 18px ! important;
+                            font-size: 17px ! important;
+                            margin-left: 28px ! important;
+                            margin-right: 15px ! important;
                      }
 
+                     hr {
+                            margin-left: 17px;
+                            width: 17%;
+                     }
+
+                     footer {
+                            margin-right: -10%;
+                            margin-left: -50%;
+                            font-size: 77%;
+                     }
+
+                     nav {
+                            margin-left: -28px;
+                     }
+
+
                      /* Adjust image size for smaller screens */
-                     .image {
-                            width: 40% !important;
-                            height: 40% !important;
-                            margin-right: 10px;
-                            margin-left: 40px" 
+                     img {
+                            width: 1500px !important;
+                            height: 300px !important;
+                            margin-right: -200%;
+                            margin-left: 20%;
 
                      }
               }
@@ -93,51 +128,67 @@
 
 
        <!-- Sidebar/menu -->
-       <nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding"
-              style="z-index:3;width:240px;font-weight:bold;" id="mySidebar"><br>
-              <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
-                     style="width:100%;font-size:22px">Close Menu</a>
-              <div class="w3-container">
-                     <h1 class="w3-padding-32 w3-center"><b>Explore</b></h1>
-              </div>
-              <div class="w3-bar-block">
-                     <a href="index.html" onclick="w3_close()"
-                            class="w3-bar-item w3-text-blue w3-button w3-hover-grey w3-white w3-round-xlarge w3-center">Why
-                            Kelp?</a>
-                     <hr>
-                     <a href="helpSomeKelp.html" onclick="w3_close()"
-                            class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Help
-                            Some
-                            Kelp</a>
-                     <hr>
-                     <a href="kelpHelps.html" onclick="w3_close()"
-                            class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Kelp
-                            Helps</a>
-                     <hr>
-                     <a href="kelpOnShores.html" onclick="w3_close()"
-                            class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Dead
-                            Kelp</a>
-                     <hr>
-                     <a href="HelpToBeHelped.html" onclick="w3_close()"
-                            class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Help
-                            to Be
-                            Helped</a>
-                     <hr>
-                     <a href="usefullLinks.html" onclick="w3_close()"
-                            class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Useful
-                            Links</a>
-                     <hr>
-                     <a href="AboutUs.html" onclick="w3_close()"
-                            class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">About
-                            Us</a>
-                     <hr>
-              </div>
-       </nav>
+       <div>
+              <nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding"
+                     style="z-index:3;width:240px;font-weight:bold;" id="mySidebar"><br>
+
+                     <a href="javascript:void(0)" onclick="w3_close()"
+                            class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close
+                            Menu</a>
+
+                     <div class="w3-container">
+                            <h1 class="w3-padding-32 w3-center"><b>Explore</b></h1>
+                     </div>
+
+                     <div class="w3-bar-block">
+                            <a href="index.html" onclick="w3_close()"
+                                   class="w3-bar-item w3-text-blue w3-button w3-hover-grey w3-white w3-round-xlarge w3-center">Why
+                                   Kelp?</a>
+                            <hr style="width: 80%;">
+
+                            <a href="helpSomeKelp.html" onclick="w3_close()"
+                                   class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Help
+                                   Some
+                                   Kelp</a>
+                            <hr style="width: 80%;">
+
+                            <a href="kelpHelps.html" onclick="w3_close()"
+                                   class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Kelp
+                                   Helps</a>
+                            <hr style="width: 80%;">
+
+                            <a href="kelpOnShores.html" onclick="w3_close()"
+                                   class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Dead
+                                   Kelp</a>
+                            <hr style="width: 80%;">
+
+                            <a href="HelpToBeHelped.html" onclick="w3_close()"
+                                   class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Help
+                                   to Be
+                                   Helped</a>
+                            <hr style="width: 80%;">
+
+                            <a href="usefullLinks.html" onclick="w3_close()"
+                                   class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Useful
+                                   Links</a>
+                            <hr style="width: 80%;">
+
+                            <a href="AboutUs.html" onclick="w3_close()"
+                                   class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">About
+                                   Us</a>
+                            <hr style="width: 80%;">
+
+                     </div>
+              </nav>
+
+       </div>
 
 
        <!-- Top menu on small screens -->
-       <header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+       <header style="margin-left: -28px;" class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+
               <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
+
               <span><b>Menu</b></span>
        </header>
 
@@ -146,70 +197,91 @@
               id="myOverlay"></div>
 
        <!-- Header -->
-       <div class="w3-container" style="margin-top:25px" id="showcase"></div>
+       <div class="w3-container" style="margin-top:30px" id="showcase"></div>
 
        <!-- !PAGE CONTENT! -->
-       <div class="w3-main" style="margin-left:10px">
-              <div class="w3-main" style="margin-left:240px">
-                     <header>
-                            <div class="w3-container">
-                                   <h1 class="w3-center w3-round w3-text-ocean-blue w3-xxxlarge"
-                                          style="margin-right:140px">
-                                          <b>Kelp Helps</b>
-                                   </h1>
-                            </div>
-                     </header><br>
-
-                     <div class="container">
-                            <div style="margin-left: 40px;margin-right: 100px">
-
-                                   <hr style="margin-left:4px;width:120px;border:7px solid blue" class="w3-round"><br>
-
-                                   <p> Kelp serves as a powerful tool in combatting climate change, excelling at
-                                          capturing CO2
-                                          from the
-                                          atmosphere.
-                                          <br><br>
-                                          Additionally, it offers a safe haven and living space for a diverse
-                                          range of
-                                          marine
-                                          species,
-                                          bolstering local
-                                          biodiversity and promoting overall ecosystem well-being. <br><br>
-                                          The development of bioplastics from kelp presents an opportunity to
-                                          supplant
-                                          conventional plastics,
-                                          ultimately
-                                          reducing plastic waste. <br><br>
-                                          In summary, seaweeds like kelp have the capacity to greatly impact
-                                          sustainable
-                                          agriculture and aid
-                                          in
-                                          addressing pressing environmental issues like climate change, ocean
-                                          acidification, and
-                                          plastic
-                                          pollution. <br>
-                                   </p>
-                            </div>
-                            <div class="w3-container w3-margin-bottom">
-
-                                   <img style="margin-right:550px;margin-left:-80px" class=" image w3-card"
-                                          src=" images/Kelp9.webp" alt="Your Image">
-                            </div>
+       <div class="w3-main" style="margin-left:210px">
+              <header>
+                     <div class="w3-container">
+                            <h1 class="w3-center w3-round w3-text-ocean-blue w3-xxxlarge" style="margin-right:140px">
+                                   <b>Kelp Helps</b>
+                            </h1>
                      </div>
-                     <hr>
-                     <div>
-                            <h4><b><a style="margin-left: 125px;"
-                                                 class="w3-bar-item w3-button w3-hover-grey  w3-blue w3-round-xxlarge w3-center"
-                                                 href="index.html">Home / Comment</a></b></h4>
+              </header>
+
+              <section class="w3-row">
+
+                     <hr style="border:7px solid blue" class="w3-round">
+
+
+                     <div class="padding">
+                            <table>
+                                   <tr>
+                                          <td>
+                                                 <p> Kelp serves as a powerful tool in
+                                                        combatting
+                                                        climate change,
+                                                        excelling at
+                                                        capturing CO2
+                                                        from the
+                                                        atmosphere.
+                                                        <br><br>
+                                                        Additionally, it offers a safe haven and living space for a
+                                                        diverse
+                                                        range of
+                                                        marine
+                                                        species,
+                                                        bolstering local
+                                                        biodiversity and promoting overall ecosystem well-being.
+                                                        <br><br>
+                                                        The development of bioplastics from kelp presents an opportunity
+                                                        to
+                                                        supplant
+                                                        conventional plastics,
+                                                        ultimately
+                                                        reducing plastic waste. <br><br>
+                                                        In summary, seaweeds like kelp have the capacity to greatly
+                                                        impact
+                                                        sustainable
+                                                        agriculture and aid
+                                                        in
+                                                        addressing pressing environmental issues like climate change,
+                                                        ocean
+                                                        acidification, and
+                                                        plastic
+                                                        pollution. <br>
+                                                 </p>
+                                          </td>
+                                          <td>
+                                                 <div class="w3-container w3-margin-bottom">
+
+                                                        <img class=" image w3-card" src=" images/Kelp9.webp"
+                                                               alt="Your Image">
+                                                 </div>
+                                          </td>
+                                   </tr>
+                            </table>
+                            <hr>
                      </div>
+              </section>
+
+              <div>
+                     <h4>
+                            <b>
+                                   <a class="w3-bar-item w3-button w3-hover-grey  w3-blue w3-round-xxlarge w3-center"
+                                          href="index.html">Home / Comment
+                                   </a>
+                            </b>
+                     </h4>
               </div>
        </div>
 
 
-       <footer>
-              <div class="w3-white w3-container w3-padding-16" style="margin-top:40px;padding-right:58px">
-                     <p class="w3-right">Powered by HELP KELP, HELP OURSELVES TEAM</p>
+
+       <footer style="margin-top:40px;">
+              <div class="w3-white w3-container w3-padding-16">
+
+                     <p class="w3-right w3-padding">Powered by HELP KELP, HELP OURSELVES TEAM</p>
               </div>
        </footer>
 

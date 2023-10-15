@@ -25,6 +25,22 @@
 
               body {
                      font-size: 25px;
+                     margin-left: 170px;
+                     margin-right: 170px;
+              }
+
+
+              hr {
+                     margin-left: 17px;
+                     width: 120px;
+              }
+
+              footer {
+                     margin-right: -15.5%;
+              }
+
+              nav {
+                     margin-left: -170px;
               }
 
               .w3-half img {
@@ -32,16 +48,51 @@
                      margin-top: 16px;
               }
 
+              img {
+                     width: 250% ! important;
+                     height: 500px ! important;
+              }
+
               @media screen and (max-width: 768px) {
 
                      /* Adjust font size for smaller screens */
                      body {
                             font-size: 17px ! important;
+                            margin-left: 28px ! important;
+                            margin-right: 15px ! important;
+                     }
+
+                     hr {
+                            margin-left: 17px;
+                            width: 17%;
+                     }
+
+                     footer {
+                            margin-right: -10%;
+                            margin-left: -50%;
+                            font-size: 77%;
+                     }
+
+                     nav {
+                            margin-left: -28px;
                      }
 
                      img {
-                            max-width: 100%;
-                            height: auto;
+                            width: 140% ! important;
+                            height: 250px ! important;
+                     }
+
+
+
+                     /* Adjust image size for smaller screens */
+                     img {
+                            height: 320px;
+                            width: 320%;
+                            margin-left: 4px;
+                     }
+
+                     h1 {
+                            font-size: 17px ! important;
                      }
               }
        </style>
@@ -83,50 +134,67 @@
 
 
        <!-- Sidebar/menu -->
-       <nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding"
-              style="z-index:3;width:240px;font-weight:bold;" id="mySidebar"><br>
-              <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
-                     style="width:100%;font-size:22px">Close Menu</a>
-              <div class="w3-container">
-                     <h1 class="w3-padding-32 w3-center"><b>Explore</b></h1>
-              </div>
-              <div class="w3-bar-block">
-                     <a href="index.html" onclick="w3_close()"
-                            class="w3-bar-item w3-text-blue w3-button w3-hover-grey w3-white w3-round-xlarge w3-center">Why
-                            Kelp?</a>
-                     <hr>
-                     <a href="helpSomeKelp.html" onclick="w3_close()"
-                            class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Help
-                            Some
-                            Kelp</a>
-                     <hr>
-                     <a href="kelpHelps.html" onclick="w3_close()"
-                            class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Kelp
-                            Helps</a>
-                     <hr>
-                     <a href="kelpOnShores.html" onclick="w3_close()"
-                            class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Dead
-                            Kelp</a>
-                     <hr>
-                     <a href="HelpToBeHelped.html" onclick="w3_close()"
-                            class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Help
-                            to Be
-                            Helped</a>
-                     <hr>
-                     <a href="usefullLinks.html" onclick="w3_close()"
-                            class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Useful
-                            Links</a>
-                     <hr>
-                     <a href="AboutUs.html" onclick="w3_close()"
-                            class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">About
-                            Us</a>
-                     <hr>
-              </div>
-       </nav>
+       <div>
+              <nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding"
+                     style="z-index:3;width:240px;font-weight:bold;" id="mySidebar"><br>
+
+                     <a href="javascript:void(0)" onclick="w3_close()"
+                            class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close
+                            Menu</a>
+
+                     <div class="w3-container">
+                            <h1 class="w3-padding-32 w3-center"><b>Explore</b></h1>
+                     </div>
+
+                     <div class="w3-bar-block">
+                            <a href="index.html" onclick="w3_close()"
+                                   class="w3-bar-item w3-text-blue w3-button w3-hover-grey w3-white w3-round-xlarge w3-center">Why
+                                   Kelp?</a>
+                            <hr style="width: 80%;">
+
+                            <a href="helpSomeKelp.html" onclick="w3_close()"
+                                   class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Help
+                                   Some
+                                   Kelp</a>
+                            <hr style="width: 80%;">
+
+                            <a href="kelpHelps.html" onclick="w3_close()"
+                                   class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Kelp
+                                   Helps</a>
+                            <hr style="width: 80%;">
+
+                            <a href="kelpOnShores.html" onclick="w3_close()"
+                                   class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Dead
+                                   Kelp</a>
+                            <hr style="width: 80%;">
+
+                            <a href="HelpToBeHelped.html" onclick="w3_close()"
+                                   class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Help
+                                   to Be
+                                   Helped</a>
+                            <hr style="width: 80%;">
+
+                            <a href="usefullLinks.html" onclick="w3_close()"
+                                   class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">Useful
+                                   Links</a>
+                            <hr style="width: 80%;">
+
+                            <a href="AboutUs.html" onclick="w3_close()"
+                                   class="w3-bar-item w3-text-blue w3-button w3-hover-grey  w3-white w3-round-xlarge w3-center">About
+                                   Us</a>
+                            <hr style="width: 80%;">
+
+                     </div>
+              </nav>
+
+       </div>
+
 
        <!-- Top menu on small screens -->
-       <header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+       <header style="margin-left: -28px;" class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+
               <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
+
               <span><b>Menu</b></span>
        </header>
 
@@ -135,26 +203,32 @@
               id="myOverlay"></div>
 
        <!-- Header -->
-       <div class="w3-container" style="margin-top:20px" id="showcase"></div>
+       <div class="w3-container" style="margin-top:30px" id="showcase"></div>
+
 
        <!-- !PAGE CONTENT! -->
        <div class="w3-main" style="margin-left:240px">
               <header>
-                     <div class="w3-container" style="margin-top:20px; margin-right:40px">
-                            <h1 class="w3-center w3-round w3-text-ocean-blue w3-xxxlarge">
-                                   <b>Help Kelp, Help Ourselves<br></b>
+                     <div class="w3-container" style="margin-top:20px">
+                            <h1 class="w3-center w3-round w3-text-ocean-blue w3-xxxlarge"
+                                   style="margin-left:140px;margin-right:140px">
+                                   <b>Help Some Kelp</b>
                             </h1>
                      </div>
               </header>
+
               <section class="w3-row">
-                     <div style="margin-top:20px;margin-left:190px;margin-right:190px" class="w3-padding">
 
-                            <hr style="margin-left:4px;width:120px;border:7px solid blue" class="w3-round">
+                     <hr style="border:7px solid blue" class="w3-round">
 
+
+                     <div class="w3-padding">
                             <p>
-                                   The intricacies of our relationship with the ecosystem can be overwhelming, but in
+                                   The intricacies of our relationship with the ecosystem can be overwhelming,
+                                   but in
                                    light of the
-                                   global food crisis, we, as a species, should not hesitate to make use of freshly
+                                   global food crisis, we, as a species, should not hesitate to make use of
+                                   freshly
                                    washed ashore,
                                    deceased kelp. We may have simply picked some of the valuable food from ocean
                                    gardens, as Adam and
@@ -162,7 +236,8 @@
                                    <hr>
                                    This could also lead to the creation of jobs, demanding expertise in climate,
                                    oceanography, and
-                                   agriculture, allowing skilled professionals to collect dead kelp at the right time
+                                   agriculture, allowing skilled professionals to collect dead kelp at the right
+                                   time
                                    and in the right
                                    locations.
                                    <hr>
@@ -170,26 +245,27 @@
                                    ecosystem to harness
                                    the potential of kelp, why not help yourself to some kelp? The more the public
                                    embraces and consumes
-                                   kelp, the better knowledge, businesses, and systems we can develop to sustain both
+                                   kelp, the better knowledge, businesses, and systems we can develop to sustain
+                                   both
                                    our species and
                                    the planet.
                             </p>
 
-                            <div class="w3-center">
-                                   <img src="images/Kelp4.JPG" height="400px" width="100%" class="w3-card">
-                            </div>
 
                      </div>
-
               </section>
+
+
+              <div class="w3-center">
+                     <img src="images/Kelp4.JPG" class="w3-card">
+              </div>
 
               <hr>
 
               <div>
                      <h4>
                             <b>
-                                   <a style="margin-left: 200px;"
-                                          class="w3-bar-item w3-button w3-hover-grey  w3-blue w3-round-xxlarge w3-center"
+                                   <a class="w3-bar-item w3-button w3-hover-grey  w3-blue w3-round-xxlarge w3-center"
                                           href="index.html">Home / Comment
                                    </a>
                             </b>
@@ -197,9 +273,10 @@
               </div>
        </div>
 
-       <footer>
-              <div class="w3-white w3-container w3-padding-16" style="margin-top:40px;padding-right:58px">
-                     <p class="w3-right">Powered by HELP KELP, HELP OURSELVES TEAM</p>
+       <footer style="margin-top:40px;">
+              <div class="w3-white w3-container w3-padding-16">
+
+                     <p class="w3-right w3-padding">Powered by HELP KELP, HELP OURSELVES TEAM</p>
               </div>
        </footer>
 

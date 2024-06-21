@@ -3,3 +3,7 @@ A brilliant opportunity to participate in the NASA Space Apps Hackathon 2023, to
 I would like to thank the team members, Sivabharathi Dhatchinamoorthi, Shean Hans Teoh, Khai Xuen Tang and especially Ran (Qiuran) Hu, who conceived the project, providing the opportunity to work together for this noble cause. 
 
 The website was developed to make information available, through photos, videos and texts with the purpose of disseminating knowledge, promoting reflection and educating on a subject that will always be of extreme importance for humanity and the entire ecosystem of planet Earth.
+
+
+<img width="1278" alt="8" src="https://github.com/FE7R7/HelpKelpHelpOurselves/assets/147453330/23d01101-dd3c-4b1f-8439-d9a7c9a3bae1">
+
